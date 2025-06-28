@@ -1,0 +1,208 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #555;
+  font-size: 18px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.gambar {
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333;
+}
+
+nav ul li {
+  margin: 5px 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .gambar {
+    width: 150px;
+  }
+}
+
+.kontak-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.kontak-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.kontak-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.kontak-form button:hover {
+  background-color: #0056b3;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 999;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.dark-toggle:hover {
+  background-color: #444;
+}
+ body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode nav ul {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode nav ul li a {
+  color: #e0e0e0;
+}
+
+body.dark-mode nav ul li a:hover {
+  background-color: #333;
+}
+
+body.dark-mode button {
+  background-color: #444;
+  color: white;
+}
+
+body.dark-mode button:hover {
+  background-color: #666;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #555;
+} 
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode h1,
+body.dark-mode p,
+body.dark-mode label {
+  color: #f0f0f0;
+}
+
+
+
